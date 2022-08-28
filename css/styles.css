@@ -269,6 +269,16 @@ ul li:hover ul li {
     background-color: rgba(31, 31, 31, 0.5);
 }
 
+.Carrito {
+    cursor: pointer;
+    padding: 5px;
+    background: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
 
 /*Doggies */
 
