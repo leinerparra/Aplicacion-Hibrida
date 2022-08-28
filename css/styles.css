@@ -268,3 +268,41 @@ ul li:hover ul li {
     font-size: medium;
     background-color: rgba(31, 31, 31, 0.5);
 }
+
+
+/*Doggies */
+
+.container_perros {
+    width: 100%;
+    display: flex;
+    max-width: 2000px;
+    padding: 150px;
+}
+
+.card_perros {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.card_perros:hover {
+    box-shadow: 5px 5px 20px rgba(31, 31, 31, 0.5);
+}
+
+.card_perros img {
+    width: 110%;
+    height: 400px;
+}
+
+.card_perros .contenido {
+    padding: 15px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    color: black;
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-size: medium;
+    background-color: rgba(31, 31, 31, 0.5);
+}
