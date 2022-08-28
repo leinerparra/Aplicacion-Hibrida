@@ -230,3 +230,12 @@ ul li:hover ul li {
     flex-direction: column;
     justify-content: space-between;
 }
+
+
+/*Mishis*/
+
+.container_gatos {
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+}
