@@ -1,3 +1,8 @@
+//LLAMAR FUNCIONES
+document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);
+document.getElementById("btn__registrarse").addEventListener("click", register);
+window.addEventListener("resize", anchoPage);
+
 //variables
 var formulario_login = document.querySelector(".formulario__login");
 var formulario_register = document.querySelector(".formulario__register");
