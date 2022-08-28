@@ -242,6 +242,7 @@ ul li:hover ul li {
 }
 
 .slider li img {
+    padding: 1%;
     width: 50%;
     height: 600px;
     object-fit: cover;
