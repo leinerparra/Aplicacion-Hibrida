@@ -662,3 +662,55 @@ section {
     background-size: cover;
     background-position: center;
 }
+
+.inicio .imagen_inicio {
+    width: 40vw;
+    animation: float 3s linear infinite;
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0rem);
+    }
+    50% {
+        transform: translateY(-3.5rem);
+    }
+}
+
+.inicio .contenido1 h3 {
+    font-size: 5.5 rem;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.inicio .contenido1 h3 span {
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.inicio .contenido1 p {
+    font-size: 1.7rem;
+    color: black;
+    padding: 1rem 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.inicio {
+    flex-flow: column-reverse;
+}
+
+.inicio .imagen_inicio img {
+    width: 100%;
+}
+
+.inicio .contenido1 h3 {
+    font-size: 3.6rem;
+}
+
+.inicio .contenido1 p {
+    font-size: 1.5rem;
+    padding: 5%;
+}
