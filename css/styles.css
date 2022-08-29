@@ -644,3 +644,21 @@ div.pie {
     font-size: 13px;
     box-shadow: 10px 10px 40px -14px #000;
 }
+
+
+/*Inicio*/
+
+section {
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+}
+
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
