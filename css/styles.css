@@ -559,3 +559,88 @@ div.pie {
     text-shadow: 2px 2 px 5px purple;
     padding: 10px;
 }
+
+
+/*Contacto*/
+
+.formato {
+    width: 500px;
+    height: 440px;
+    background: wheat;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px#000;
+    margin: calc(50vh - 220px) auto;
+    padding: 20px 30px;
+    max-width: calc(100vm - 40px);
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    align-items: center;
+    align-content: center;
+}
+
+.formato h2 {
+    margin: 10px 0;
+    padding-bottom: 10px;
+    width: 180px;
+    color: gray;
+    border-bottom: 3px solid black;
+}
+
+.formato input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-family: 'Times New Roman', Times, serif;
+    transition: all .3s;
+    border-bottom: 2px solid gray;
+    align-items: center;
+    align-content: center;
+}
+
+.formato input:focus {
+    border-bottom: 2px solid lightblue;
+}
+
+.formato p::before {
+    content: attr(type);
+    display: block;
+    margin: 20px 0 0;
+    color: gray;
+}
+
+.formato button {
+    float: right;
+    padding: 1px 10px;
+    margin: 8px 0 0;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid gray;
+    background: 0;
+    color: black;
+    cursor: pointer;
+    transition: all .3s;
+    align-items: center;
+    align-content: center;
+}
+
+.formato button:hover {
+    background: gray;
+    color: white;
+}
+
+.formato div {
+    position: absolute;
+    bottom: -15px;
+    right: -20px;
+    background: black;
+    color: white;
+    width: 320px;
+    padding: 16px 4px 16px 0;
+    border-radius: 6px;
+    font-size: 13px;
+    box-shadow: 10px 10px 40px -14px #000;
+}
