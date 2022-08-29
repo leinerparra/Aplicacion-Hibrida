@@ -1,716 +1,695 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
 }
 
 body {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 main {
-    width: 100%;
-    padding: 20px;
-    margin: auto;
-    margin-top: 100px;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+  margin-top: 100px;
 }
 
 .caja__trasera div h3 {
-    font-weight: 400;
-    font-size: 26px;
+  font-weight: 400;
+  font-size: 26px;
 }
 
 .caja__trasera div p {
-    font-size: 16px;
-    font-weight: 300;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .caja__trasera div {
-    margin: 100px 40px;
-    color: white;
-    transition: all 500ms;
+  margin: 100px 40px;
+  color: white;
+  transition: all 500ms;
 }
 
 .contenedor__todo {
-    width: 100%;
-    max-width: 800px;
-    margin: auto;
-    position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  position: relative;
 }
 
 .caja__trasera {
-    width: 100%;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: center;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    background-color: rgba(0, 128, 255, 0.5);
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 128, 255, 0.5);
 }
 
 .caja__trasera div p,
 .caja__trasera button {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .caja__trasera button:hover {
-    background: #fff;
-    color: #46A2FD;
+  background: #fff;
+  color: #46A2FD;
 }
 
 .contenedor__login-register {
-    /* JS*/
-    transition: left 800ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 380px;
-    position: relative;
-    top: -185px;
-    left: 10px;
+  /* JS*/
+  transition: left 800ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 380px;
+  position: relative;
+  top: -185px;
+  left: 10px;
 }
 
 .caja__trasera button {
-    padding: 10px 40px;
-    border: 2px solid #fff;
-    font-size: 14px;
-    background: transparent;
-    font-weight: 600;
-    transition: all 300ms;
-    cursor: pointer;
-    color: white;
-    outline: none;
+  padding: 10px 40px;
+  border: 2px solid #fff;
+  font-size: 14px;
+  background: transparent;
+  font-weight: 600;
+  transition: all 300ms;
+  cursor: pointer;
+  color: white;
+  outline: none;
 }
 
 .contenedor__login-register form {
-    width: 100%;
-    padding: 80px 20px;
-    position: absolute;
-    border-radius: 20px;
-    background: yellow;
+  width: 100%;
+  padding: 80px 20px;
+  position: absolute;
+  border-radius: 20px;
+  background: yellow;
 }
 
 .contenedor__login-register form h2 {
-    font-size: 30px;
-    text-align: center;
-    color: chocolate;
-    margin-bottom: 20px;
+  font-size: 30px;
+  text-align: center;
+  color: chocolate;
+  margin-bottom: 20px;
 }
 
 .contenedor__login-register form input {
-    width: 100%;
-    margin-top: 20px;
-    padding: 10px;
-    border: none;
-    background: blue;
-    font-size: 16px;
-    outline: none;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  background: blue;
+  font-size: 16px;
+  outline: none;
 }
 
 .contenedor__login-register form button {
-    padding: 10px 40px;
-    margin-top: 40px;
-    border: none;
-    font-size: 14px;
-    background: purple;
-    font-weight: 600;
-    cursor: pointer;
-    color: black;
-    outline: none;
+  padding: 10px 40px;
+  margin-top: 40px;
+  border: none;
+  font-size: 14px;
+  background: purple;
+  font-weight: 600;
+  cursor: pointer;
+  color: black;
+  outline: none;
 }
 
 .formulario__login {
-    opacity: 1;
-    display: block;
+  opacity: 1;
+  display: block;
 }
 
 .formulario__register {
-    display: none;
+  display: none;
 }
 
 @media screen and (max-width: 850px) {
-    main {
-        margin-top: 50px;
-    }
-    .caja__trasera {
-        max-width: 350px;
-        height: 300px;
-        flex-direction: column;
-        margin: auto;
-    }
-    .caja__trasera div {
-        margin: 0px;
-        position: absolute;
-    }
-    /*Formularios*/
-    .contenedor__login-register {
-        top: -10px;
-        left: -5px;
-        margin: auto;
-    }
-    .contenedor__login-register form {
-        position: relative;
-    }
+  main {
+    margin-top: 50px;
+  }
+  .caja__trasera {
+    max-width: 350px;
+    height: 300px;
+    flex-direction: column;
+    margin: auto;
+  }
+  .caja__trasera div {
+    margin: 0px;
+    position: absolute;
+  }
+  /*Formularios*/
+  .contenedor__login-register {
+    top: -10px;
+    left: -5px;
+    margin: auto;
+  }
+  .contenedor__login-register form {
+    position: relative;
+  }
 }
-
-
 /* iNICIO */
-
 .header {
-    z-index: 100;
+  z-index: 100;
 }
 
 .header ul {
-    display: flex;
-    justify-content: space-around;
-    background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .header ul li ul {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 ul li a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    font-size: 30px;
-    display: block;
+  text-decoration: none;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+  font-size: 30px;
+  display: block;
 }
 
 ul li a:hover {
-    background-color: rgba(231, 128, 23, 0.5);
+  background-color: rgba(231, 128, 23, 0.5);
 }
 
 ul li ul li {
-    display: none;
+  display: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
-
 /*Cuadro de ,los nombres*/
-
 ul li {
-    width: 100%;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    font-size: 22px;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 22px;
 }
 
 ul li ul li a {
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: normal;
-    font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: normal;
+  font-size: 20px;
 }
 
 .slider li:target {
-    opacity: 1;
+  opacity: 1;
 }
 
 ul li:hover ul li {
-    display: block;
+  display: block;
 }
 
 .container {
-    height: 490vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  height: 490vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-
 /*Mishis*/
-
 .container_gatos {
-    width: 100%;
-    display: flex;
-    max-width: 2000px;
-    padding: 150px;
+  width: 100%;
+  display: flex;
+  max-width: 2000px;
+  padding: 150px;
 }
 
 .card_gatos {
-    width: 100%;
-    margin: 20px;
-    border-radius: 6px;
-    overflow: hidden;
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .card_gatos:hover {
-    box-shadow: 5px 5px 20px rgba(31, 31, 31, 0.5);
+  box-shadow: 5px 5px 20px rgba(31, 31, 31, 0.5);
 }
 
 .card_gatos img {
-    width: 110%;
-    height: 400px;
+  width: 110%;
+  height: 400px;
 }
 
 .card_gatos .contenido {
-    padding: 15px;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 1.5;
-    color: black;
-    font-weight: 400;
-    margin-bottom: 15px;
-    font-size: medium;
-    background-color: rgba(31, 31, 31, 0.5);
+  padding: 15px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.5;
+  color: black;
+  font-weight: 400;
+  margin-bottom: 15px;
+  font-size: medium;
+  background-color: rgba(31, 31, 31, 0.5);
 }
 
 .Carrito {
-    cursor: pointer;
-    padding: 5px;
-    background: none;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
+  cursor: pointer;
+  padding: 5px;
+  background: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
-
 /*Doggies */
-
 .container_perros {
-    width: 100%;
-    display: flex;
-    max-width: 2000px;
-    padding: 150px;
+  width: 100%;
+  display: flex;
+  max-width: 2000px;
+  padding: 150px;
 }
 
 .card_perros {
-    width: 100%;
-    margin: 20px;
-    border-radius: 6px;
-    overflow: hidden;
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .card_perros:hover {
-    box-shadow: 5px 5px 20px rgba(31, 31, 31, 0.5);
+  box-shadow: 5px 5px 20px rgba(31, 31, 31, 0.5);
 }
 
 .card_perros img {
-    width: 110%;
-    height: 400px;
+  width: 110%;
+  height: 400px;
 }
 
 .card_perros .contenido {
-    padding: 15px;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 1.5;
-    color: black;
-    font-weight: 400;
-    margin-bottom: 15px;
-    font-size: medium;
-    background-color: rgba(31, 31, 31, 0.5);
+  padding: 15px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.5;
+  color: black;
+  font-weight: 400;
+  margin-bottom: 15px;
+  font-size: medium;
+  background-color: rgba(31, 31, 31, 0.5);
 }
 
-
 /*Otros*/
-
 .container_otros {
-    width: 100%;
-    display: flex;
-    max-width: 2000px;
-    padding: 150px;
+  width: 100%;
+  display: flex;
+  max-width: 2000px;
+  padding: 150px;
 }
 
 .card_otros {
-    width: 100%;
-    margin: 20px;
-    border-radius: 6px;
-    overflow: hidden;
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .card_otros:hover {
-    box-shadow: 5px 5px 20px rgba(31, 31, 31, 0.5);
+  box-shadow: 5px 5px 20px rgba(31, 31, 31, 0.5);
 }
 
 .card_otros img {
-    width: 110%;
-    height: 400px;
+  width: 110%;
+  height: 400px;
 }
 
 .card_otros .contenido {
-    padding: 15px;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 1.5;
-    color: black;
-    font-weight: 400;
-    margin-bottom: 15px;
-    font-size: medium;
-    background-color: rgba(31, 31, 31, 0.5);
+  padding: 15px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.5;
+  color: black;
+  font-weight: 400;
+  margin-bottom: 15px;
+  font-size: medium;
+  background-color: rgba(31, 31, 31, 0.5);
 }
 
-
 /*About us*/
-
 .Contenido_us {
-    width: 100%;
-    min-height: 100vh;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .Contenido_us .titulo {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    font-size: 22px;
-    color: black;
-    letter-spacing: 1px;
-    padding: 40px 2px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 22px;
+  color: black;
+  letter-spacing: 1px;
+  padding: 40px 2px;
 }
 
 .Contenido_us .titulo h1::after {
-    content: "";
-    height: 6px;
-    width: 190px;
-    background-color: black;
-    border-radius: 6px;
-    position: relative;
-    display: block;
-    margin: auto;
+  content: "";
+  height: 6px;
+  width: 190px;
+  background-color: black;
+  border-radius: 6px;
+  position: relative;
+  display: block;
+  margin: auto;
 }
 
 .contenido_similar {
-    width: 120%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 200px;
-    margin: 80px auto;
-    padding: 8%;
+  width: 120%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 200px;
+  margin: 80px auto;
+  padding: 8%;
 }
 
 .Contenido_us .articulo {
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
-    background-color: grey;
-    padding: 25px 25px;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+  background-color: grey;
+  padding: 25px 25px;
 }
 
 .Contenido_us .articulo h2 {
-    color: blue;
-    font-size: 22px;
-    line-height: 1.5;
-    letter-spacing: 1px;
+  color: blue;
+  font-size: 22px;
+  line-height: 1.5;
+  letter-spacing: 1px;
 }
 
 .Contenido_us .articulo p {
-    margin-top: 30px;
-    font-size: 19px;
-    line-height: 1.5;
-    color: #222;
+  margin-top: 30px;
+  font-size: 19px;
+  line-height: 1.5;
+  color: #222;
 }
 
 .Contenido_us .articulo a {
-    font-size: 22px;
-    text-decoration: none;
-    display: inline-block;
-    padding: 12px 35px;
+  font-size: 22px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 35px;
 }
 
 .imagen_us {
-    width: 1050px;
-    height: 300px;
-    margin: auto;
+  width: 1050px;
+  height: 300px;
+  margin: auto;
 }
 
 .imagen_us img {
-    width: 30%;
-    height: auto;
+  width: 30%;
+  height: auto;
 }
 
-
 /*Prop Up*/
-
 .Carrito {
-    padding: 40px;
-    background-color: red;
+  padding: 40px;
+  background-color: red;
 }
 
 .Carrito label {
-    padding: 10px 15px;
-    background-color: #545454;
-    color: wheat;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 300ms ease;
+  padding: 10px 15px;
+  background-color: #545454;
+  color: wheat;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 300ms ease;
 }
 
 .Carrito label:hover {
-    background-color: #185E83;
+  background-color: #185E83;
 }
 
 #btn-modal {
-    display: none;
+  display: none;
 }
 
 .container-modal {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
 }
 
-#btn-modal:checked~.container-modal {
-    display: flex;
+#btn-modal:checked ~ .container-modal {
+  display: flex;
 }
 
 .content-modal {
-    width: 100%;
-    max-width: 400px;
-    padding: 20px;
-    border-radius: 4px;
-    background-color: gray;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: gray;
 }
 
 .content-modal h2 {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .content-modal p {
-    padding: 15px 0px;
-    border-top: 1px solid #dbdbdb;
-    border-bottom: 1px solid #dbdbdb;
+  padding: 15px 0px;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
 }
 
 .content-modal .btn-cerrar {
-    width: 100%;
-    margin-top: 15px;
-    display: flex;
-    justify-content: flex-end;
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .content-modal .btn-cerrar label {
-    padding: 7px 10px;
-    background-color: #5488a3;
-    color: #fff;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 300ms ease;
+  padding: 7px 10px;
+  background-color: #5488a3;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 300ms ease;
 }
 
 .content-modal .btn-cerrar label:hover {
-    background-color: #46A2FD;
+  background-color: #46A2FD;
 }
 
-
 /*Galeria*/
-
 .Titulos h1 {
-    color: white;
-    text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
-    text-align: center;
-    margin: 90px 50px;
-    padding: 1%;
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
+  color: white;
+  text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
+  text-align: center;
+  margin: 90px 50px;
+  padding: 1%;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .Titulos h2 {
-    color: white;
-    text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
-    text-align: center;
-    margin: 20px 30px;
-    padding: 1%;
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
+  color: white;
+  text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
+  text-align: center;
+  margin: 20px 30px;
+  padding: 1%;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
 }
 
 div.galeria {
-    margin: 60px 127px;
-    box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    float: left;
-    width: 380px;
-    font-size: 150%;
-    font-family: 'Times New Roman', Times, serif;
+  margin: 60px 127px;
+  box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  float: left;
+  width: 380px;
+  font-size: 150%;
+  font-family: "Times New Roman", Times, serif;
 }
 
 div.galeria img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 div.galeria:hover {
-    border: 1px solid lightcoral;
-    transform: rotate(-3deg);
+  border: 1px solid lightcoral;
+  transform: rotate(-3deg);
 }
 
 div.pie {
-    text-align: center;
-    text-shadow: 2px 2 px 5px purple;
-    padding: 10px;
+  text-align: center;
+  text-shadow: 2px 2 px 5px purple;
+  padding: 10px;
 }
 
-
 /*Contacto*/
-
 .formato {
-    width: 500px;
-    height: 440px;
-    background: wheat;
-    border-radius: 8px;
-    box-shadow: 0 0 40px -10px#000;
-    margin: calc(50vh - 220px) auto;
-    padding: 20px 30px;
-    max-width: calc(100vm - 40px);
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-    position: relative;
-    align-items: center;
-    align-content: center;
+  width: 500px;
+  height: 440px;
+  background: wheat;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: calc(50vh - 220px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vm - 40px);
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  position: relative;
+  align-items: center;
+  align-content: center;
 }
 
 .formato h2 {
-    margin: 10px 0;
-    padding-bottom: 10px;
-    width: 180px;
-    color: gray;
-    border-bottom: 3px solid black;
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 180px;
+  color: gray;
+  border-bottom: 3px solid black;
 }
 
 .formato input {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    background: none;
-    outline: none;
-    resize: none;
-    border: 0;
-    font-family: 'Times New Roman', Times, serif;
-    transition: all .3s;
-    border-bottom: 2px solid gray;
-    align-items: center;
-    align-content: center;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Times New Roman", Times, serif;
+  transition: all 0.3s;
+  border-bottom: 2px solid gray;
+  align-items: center;
+  align-content: center;
 }
 
 .formato input:focus {
-    border-bottom: 2px solid lightblue;
+  border-bottom: 2px solid lightblue;
 }
 
 .formato p::before {
-    content: attr(type);
-    display: block;
-    margin: 20px 0 0;
-    color: gray;
+  content: attr(type);
+  display: block;
+  margin: 20px 0 0;
+  color: gray;
 }
 
 .formato button {
-    float: right;
-    padding: 1px 10px;
-    margin: 8px 0 0;
-    font-family: 'Times New Roman', Times, serif;
-    border: 2px solid gray;
-    background: 0;
-    color: black;
-    cursor: pointer;
-    transition: all .3s;
-    align-items: center;
-    align-content: center;
+  float: right;
+  padding: 1px 10px;
+  margin: 8px 0 0;
+  font-family: "Times New Roman", Times, serif;
+  border: 2px solid gray;
+  background: 0;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s;
+  align-items: center;
+  align-content: center;
 }
 
 .formato button:hover {
-    background: gray;
-    color: white;
+  background: gray;
+  color: white;
 }
 
 .formato div {
-    position: absolute;
-    bottom: -15px;
-    right: -20px;
-    background: black;
-    color: white;
-    width: 320px;
-    padding: 16px 4px 16px 0;
-    border-radius: 6px;
-    font-size: 13px;
-    box-shadow: 10px 10px 40px -14px #000;
+  position: absolute;
+  bottom: -15px;
+  right: -20px;
+  background: black;
+  color: white;
+  width: 320px;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 10px 10px 40px -14px #000;
 }
 
-
 /*Inicio*/
-
 section {
-    min-height: 100vh;
-    padding: 0 9%;
-    padding-top: 7.5rem;
-    padding-bottom: 2rem;
+  min-height: 100vh;
+  padding: 0 9%;
+  padding-top: 7.5rem;
+  padding-bottom: 2rem;
 }
 
 .inicio {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
 }
 
 .inicio .imagen_inicio {
-    width: 40vw;
-    animation: float 3s linear infinite;
+  width: 40vw;
+  animation: float 3s linear infinite;
 }
 
 @keyframes float {
-    0%,
-    100% {
-        transform: translateY(0rem);
-    }
-    50% {
-        transform: translateY(-3.5rem);
-    }
+  0%, 100% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(-3.5rem);
+  }
 }
-
 .inicio .contenido1 h3 {
-    font-size: 5.5 rem;
-    color: black;
-    text-transform: uppercase;
-    text-align: center;
+  font-size: 5.5 rem;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .inicio .contenido1 h3 span {
-    color: black;
-    text-transform: uppercase;
-    font-family: 'Times New Roman', Times, serif;
+  color: black;
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .inicio .contenido1 p {
-    font-size: 1.7rem;
-    color: black;
-    padding: 1rem 0;
-    font-family: 'Times New Roman', Times, serif;
+  font-size: 1.7rem;
+  color: black;
+  padding: 1rem 0;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .inicio {
-    flex-flow: column-reverse;
+  flex-flow: column-reverse;
 }
 
 .inicio .imagen_inicio img {
-    width: 100%;
+  width: 100%;
 }
 
 .inicio .contenido1 h3 {
-    font-size: 3.6rem;
+  font-size: 3.6rem;
 }
 
 .inicio .contenido1 p {
-    font-size: 1.5rem;
-    padding: 5%;
+  font-size: 1.5rem;
+  padding: 5%;
 }
+
+/*# sourceMappingURL=styles.css.map */
