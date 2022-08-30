@@ -94,13 +94,13 @@ main {
     padding: 80px 20px;
     position: absolute;
     border-radius: 20px;
-    background: yellow;
+    background: #46A2FD;
 }
 
 .contenedor__login-register form h2 {
     font-size: 30px;
     text-align: center;
-    color: chocolate;
+    color: black;
     margin-bottom: 20px;
 }
 
@@ -109,7 +109,7 @@ main {
     margin-top: 20px;
     padding: 10px;
     border: none;
-    background: blue;
+    background: #fff;
     font-size: 16px;
     outline: none;
 }
@@ -119,7 +119,7 @@ main {
     margin-top: 40px;
     border: none;
     font-size: 14px;
-    background: purple;
+    background: lightskyblue;
     font-weight: 600;
     cursor: pointer;
     color: black;
@@ -188,7 +188,7 @@ ul li a {
 }
 
 ul li a:hover {
-    background-color: rgba(231, 128, 23, 0.5);
+    background-color: rgba(235, 124, 13, 0.5);
 }
 
 ul li ul li {
@@ -237,8 +237,9 @@ ul li:hover ul li {
 .container_gatos {
     width: 100%;
     display: flex;
-    max-width: 2000px;
-    padding: 150px;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
 }
 
 .card_gatos {
@@ -253,8 +254,8 @@ ul li:hover ul li {
 }
 
 .card_gatos img {
-    width: 110%;
-    height: 400px;
+    width: 100%;
+    border-radius: 15px;
 }
 
 .card_gatos .contenido {
@@ -271,7 +272,7 @@ ul li:hover ul li {
 
 .Carrito {
     cursor: pointer;
-    padding: 5px;
+    padding: 3px;
     background: none;
     align-items: center;
     justify-content: center;
@@ -285,8 +286,9 @@ ul li:hover ul li {
 .container_perros {
     width: 100%;
     display: flex;
-    max-width: 2000px;
-    padding: 150px;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
 }
 
 .card_perros {
@@ -301,8 +303,8 @@ ul li:hover ul li {
 }
 
 .card_perros img {
-    width: 110%;
-    height: 400px;
+    width: 100%;
+    border-radius: 15px;
 }
 
 .card_perros .contenido {
@@ -323,8 +325,9 @@ ul li:hover ul li {
 .container_otros {
     width: 100%;
     display: flex;
-    max-width: 2000px;
-    padding: 150px;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
 }
 
 .card_otros {
@@ -438,14 +441,14 @@ ul li:hover ul li {
 
 .Carrito {
     padding: 40px;
-    background-color: red;
+    background-color: turquoise;
 }
 
 .Carrito label {
-    padding: 10px 15px;
+    padding: 5px 10px;
     background-color: #545454;
-    color: wheat;
-    border-radius: 4px;
+    color: white;
+    border-radius: 6px;
     cursor: pointer;
     transition: all 300ms ease;
 }
