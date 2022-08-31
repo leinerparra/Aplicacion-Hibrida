@@ -342,8 +342,8 @@ ul li:hover ul li {
 }
 
 .card_otros img {
-    width: 110%;
-    height: 400px;
+    width: 100%;
+    border-radius: 15px;
 }
 
 .card_otros .contenido {
@@ -363,7 +363,9 @@ ul li:hover ul li {
 
 .Contenido_us {
     width: 100%;
-    min-height: 100vh;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
 }
 
 .Contenido_us .titulo {
@@ -402,18 +404,23 @@ ul li:hover ul li {
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
     background-color: grey;
     padding: 25px 25px;
+    width: 100%;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
 }
 
 .Contenido_us .articulo h2 {
     color: blue;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.5;
     letter-spacing: 1px;
+    position: absolute;
 }
 
 .Contenido_us .articulo p {
-    margin-top: 30px;
-    font-size: 19px;
+    margin-top: 20px;
+    font-size: 20px;
     line-height: 1.5;
     color: #222;
 }
@@ -426,14 +433,13 @@ ul li:hover ul li {
 }
 
 .imagen_us {
-    width: 1050px;
-    height: 300px;
-    margin: auto;
+    width: 110%;
+    height: 400px;
 }
 
 .imagen_us img {
-    width: 30%;
-    height: auto;
+    width: 110%;
+    height: 400px;
 }
 
 
@@ -539,17 +545,16 @@ ul li:hover ul li {
 }
 
 div.galeria {
-    margin: 60px 127px;
-    box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    float: left;
-    width: 380px;
-    font-size: 150%;
-    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    display: flex;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
 }
 
 div.galeria img {
-    width: 100%;
-    height: auto;
+    width: 70%;
+    border-radius: 15px;
 }
 
 div.galeria:hover {
@@ -559,8 +564,11 @@ div.galeria:hover {
 
 div.pie {
     text-align: center;
+    align-items: center;
+    align-content: center;
     text-shadow: 2px 2 px 5px purple;
-    padding: 10px;
+    padding: 20px;
+    color: white;
 }
 
 
@@ -617,7 +625,7 @@ div.pie {
 }
 
 .formato button {
-    float: right;
+    float: center;
     padding: 1px 10px;
     margin: 8px 0 0;
     font-family: 'Times New Roman', Times, serif;
